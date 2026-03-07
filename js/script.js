@@ -11,6 +11,8 @@ async function initMap() {
     // Set map options.
     innerMap.setOptions({
         mapTypeControl: false,
+        center: -60, 150;
+        zoom: 8;
     });
     // Add a marker positioned at the map center (Uluru).
     const marker = new AdvancedMarkerElement({
