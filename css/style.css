@@ -179,3 +179,8 @@ p, li {
   height: auto;
   aspect-ratio: 16 / 9;
 }
+
+gmp-map {
+    height: 400px;
+    width: 100%;
+}
