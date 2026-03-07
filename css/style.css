@@ -183,4 +183,5 @@ p, li {
 gmp-map {
     height: 400px;
     width: 100%;
+    position: relative;
 }
