@@ -17,8 +17,9 @@ async function initMap() {
     // Add a marker positioned at the map center (Uluru).
     const marker = new AdvancedMarkerElement({
         map: innerMap,
-        position: mapElement.center,
-        title: 'Uluru/Ayers Rock',
+        position: {47.240928043436114, -122.43524879768292},
+        title: 'Tacoma Glassblowing Studio',
+    
     });
 }
 initMap();
