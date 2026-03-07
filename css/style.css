@@ -174,8 +174,17 @@ p, li {
   width: 20em;
 }
 
+#tdkvideo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
 #tkdvideo iframe {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
