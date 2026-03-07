@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
-  <script async type="text/javascript" src="js/jquery-4.0.0.js"></script>
-  <script async type="text/javascript" src="js/script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCqfbgS4Cq6X6QGIFKvrxqsw9VlSw678bo&libraries=maps,marker" defer></script>
+  <script aside type="text/javascript" src="js/jquery-4.0.0.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqfbgS4Cq6X6QGIFKvrxqsw9VlSw678bo&callback=initMap"></script>
+  <script aside type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <header>
@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div id="main-content" class="container2">
-    <gmp-map center="47.254, -122.442" zoom="12" map-id="map"></gmp-map>
+    <div id="map"></div>
     <div id="slideshow">
       <ul>
         <li></li>

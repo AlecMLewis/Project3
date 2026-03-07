@@ -180,8 +180,10 @@ p, li {
   aspect-ratio: 16 / 9;
 }
 
-gmp-map {
-    height: 700px;
-    width: 100%;
+#map {
+    height: 500px;
+    width: 700px;
     position: relative;
+    align-self: center;
+    margin: 0 auto;
 }
