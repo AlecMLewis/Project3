@@ -114,6 +114,12 @@ p, li {
   color: rgb(255, 255, 255);
 }
 
+#secsummary {
+  font-size: 1em;
+  font-family: "Roboto", Arial;
+  color: rgb(255, 255, 255);
+}
+
 .job-wrapper {
   margin: 0.5em;
   border-color: black;
@@ -139,11 +145,22 @@ p, li {
   clear: left;
   clear: right;
 }
+#secswimming {
+  font-size: 1em;
+  font-family: "Roboto", Arial;
+  color: rgb(255, 255, 255);
+}
 
 #swimimg {
   float: left;
   margin-right: 1em;
   width: 15em;
+}
+
+#sechomeschool {
+  font-size: 1em;
+  font-family: "Roboto", Arial;
+  color: rgb(255, 255, 255);
 }
 
 #studentimg {
