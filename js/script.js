@@ -1,25 +1,11 @@
+const mapElement = document.querySelector('gmp-map');
 async function initMap() {
-    //  Request the needed libraries.
-    const [{ Map }, { AdvancedMarkerElement }] = await Promise.all([
-        google.maps.importLibrary('maps'),
-        google.maps.importLibrary('marker'),
-    ]);
-    // Get the gmp-map element.
-    const mapElement = document.querySelector('gmp-map');
-    // Get the inner map.
-    const innerMap = mapElement.innerMap;
-    // Set map options.
-    innerMap.setOptions({
-        mapTypeControl: false,
-        center: -60, 150;
-        zoom: 8;
-    });
-    // Add a marker positioned at the map center (Uluru).
+    const { Map } = (await google.maps.importLibrary('maps'));
+    const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
     const marker = new AdvancedMarkerElement({
-        map: innerMap,
-        position: {47.240, -122.435},
-        title: 'Tacoma Glassblowing Studio',
-    
+        position: { lat: 47.24582, lng: -122.43405},
+        title: {"Tacoma Glassblowing Studio"},
     });
+    mapElement.append(marker);
 }
 initMap();
