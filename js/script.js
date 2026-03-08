@@ -7,20 +7,46 @@ async function initMap() {
 
     const mapElement = document.querySelector('gmp-map');
 
-    const innerMap = mapElement.innerMap;
+    const myMap = mapElement.innerMap;
 
-    innerMap.setOptions({
+    myMap.setOptions({
       mapTypeControl: false,
     });
-    // Add a marker positioned at the map center (Uluru).
-    const marker = new AdvancedMarkerElement({
-      map: innerMap,
-      position: mapElement.center,
-      title: 'Tacoma',
+    
+    const MoG = new AdvancedMarkerElement({
+      map: myMap,
+      position: { lat: 47.24555175466093, lng: -122.43401900264904 },
+      title: 'Museum of Glass',
     });
     
+    const DReef = new AdvancedMarkerElement({
+      map: myMap,
+      position: { lat: 47.25739285397731, lng: -122.44187783747694 },
+      title: "Devil's Reef",
+    });
+    
+     const ToT = new AdvancedMarkerElement({
+      map: myMap,
+      position: { lat: 47.22933137026923, lng: -122.42032177381394 },
+      title: "Top of Tacoma",
+    });
+    
+     const TPL = new AdvancedMarkerElement({
+      map: myMap,
+      position: { lat: 47.20685819133857, lng: -122.48184392442506 },
+      title: "Tacoma Public Library South Tacoma Branch",
+    });
+    
+     const WHP = new AdvancedMarkerElement({
+      map: myMap,
+      position: { lat: 47.200209588678284, lng: -122.46805894894034 },
+      title: "Wapato Hills Park",
+    });
+    
+    /*
     const markers = {
       {
+        map: innerMap
         locationName: 'Museum of Glass',
         lat: 47.24555175466093,
         lng: -122.43401900264904,
@@ -51,5 +77,6 @@ async function initMap() {
         address: '6231 S Wapato St, Tacoma, WA 98409',
       },
     }
+    */
 }
 initMap();
