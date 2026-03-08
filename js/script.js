@@ -44,14 +44,12 @@ async function initMap() {
     });
 };
 
-$(document).ready(function(){
-  $(function(){
-    $('.bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
-  });
-});
-
 initMap();
+
+$('.bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 600
+  });
