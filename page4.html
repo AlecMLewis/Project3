@@ -18,6 +18,8 @@
   <script aside type="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
 </head>
 <body>
   <header>
@@ -39,11 +41,29 @@
   </header>
   <div id="main-content" class="container2">
     <gmp-map center="47.25409238005838, -122.44215831774765" zoom="12" map-id="map"></gmp-map>
-    <div class="bxslider">
-      <div><img src="/images/tot.jpg"></div>
-      <div><img src="/images/devilr.jpg"></div>
-      <div><img src="/images/tpl.jpg"></div>
-    </div>
+    <div id="wowslider-container1">
+      <div class="ws_images">
+        <ul>
+          <li><img src="data1/images/mog.jpg" alt="Museum of Glass" title="Museum of Glass" id="wows1_0"/></li>
+          <li><img src="data1/images/tpl.jpg" alt="Tacoma Public Library" title="Tacoma Public Library" id="wows1_1"/></li>
+          <li><img src="data1/images/whp.jpg" alt="Wapato Hills Park" title="Wapato Hills Park" id="wows1_2"/></li>
+          <li><a href="http://wowslider.net"><img src="data1/images/devilsr.jpg" alt="bootstrap carousel" title="Devil's Reef" id="wows1_3"/></a></li>
+          <li><img src="data1/images/tot.jpg" alt="Top of Tacoma" title="Top of Tacoma" id="wows1_4"/></li>
+        </ul>
+      </div>
+      <div class="ws_bullets">
+        <div>
+          <a href="#" title="Museum of Glass"><span><img src="data1/tooltips/mog.jpg" alt="Museum of Glass"/>1</span></a>
+          <a href="#" title="Tacoma Public Library"><span><img src="data1/tooltips/tpl.jpg" alt="Tacoma Public Library"/>2</span></a>
+          <a href="#" title="Wapato Hills Park"><span><img src="data1/tooltips/whp.jpg" alt="Wapato Hills Park"/>3</span></a>
+          <a href="#" title="Devil's Reef"><span><img src="data1/tooltips/devilsr.jpg" alt="Devil's Reef"/>4</span></a>
+          <a href="#" title="Top of Tacoma"><span><img src="data1/tooltips/tot.jpg" alt="Top of Tacoma"/>5</span></a>
+        </div>
+      </div>
+      <div class="ws_shadow"></div>
+    </div>	
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
   </div>
 </body>
 </html>
