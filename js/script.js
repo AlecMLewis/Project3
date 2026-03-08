@@ -42,5 +42,16 @@ async function initMap() {
       position: { lat: 47.200209588678284, lng: -122.46805894894034 },
       title: "Wapato Hills Park",
     });
-}
+};
+
+$(document).ready(function(){
+  $(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  });
+});
+
 initMap();
